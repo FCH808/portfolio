@@ -11,3 +11,4 @@ function sideNav() {
 $(window).resize(function() {
   sideNav();
 });
+
