@@ -1,0 +1,169 @@
+.style2 {
+  color: #2DAEBF;
+  text-shadow: 0px 1px 0px #0092b3,0px 2px 0px #0087a6,0px 3px 0px #008099,0px 4px 0px #00758c,0px 5px 0px #555,0px 6px 0px #006a80,0px 0px 0px #006073,0px 8px 7px #005566; }
+
+.style6 {
+  color: #999;
+  text-shadow:  3px 3px 0 rgba(0, 0, 0, 0.6), 3px 3px 8px rgba(0, 0, 0, 0.4); }
+  .style6:hover {
+    transition: all 0.5s ease 0s;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.4); }
+
+.style9 {
+  color: #F7CA18;
+  text-shadow: 15px 0 15px #999, -15px 0 15px #999, 0 20px 25px #999, 0 -20px 25px #999; }
+
+.style9:hover {
+    color: #F64747;
+    transition: color 2s ease 0.1s;
+    text-shadow: 5px 0 5px #000;
+    transition: text-shadow 0.7s ease 0.2s; }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+
+}
+
+#main-header {
+  background: url("../img/fuji.jpg") no-repeat center center scroll;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75), 
+      rgba(255, 255, 255, 0.75)
+      ), url('../img/fuji.jpg') no-repeat center center scroll;
+  background-size: cover;
+  color: #555;
+}
+
+
+.off-canvas-content {
+  height: 100%;
+  
+  background-color: #fff;
+}
+
+#offCanvas {
+  height: 100%;
+  background: url("../img/pattern_black_linen.png");
+}
+
+.off-canvas-wrapper {
+  height: 100%;
+}
+
+.degree-content {
+  text-align: center;
+}
+
+.degree-title {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+
+}
+
+.section-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.intro-copy {
+  font-weight: bold;
+  font-size: .75em;
+  line-height: 175%;
+  color: #666;
+  padding: 10px 30px 40px 15px;
+}
+
+.intro-header {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+
+/* Very small mobile */
+@media only screen and (min-width: 320px) {
+
+
+
+   .intro-copy { 
+    font-size: .85em;
+    line-height: 185%;
+    padding: 10px 40px 50px 20px;
+    }
+
+    .intro-header {
+      padding-top: 30px;
+      padding-left: 20px;
+    }
+
+
+}
+
+/* Mobile */
+@media only screen and (min-width: 500px) {
+
+   .intro-copy { 
+    font-size: 1em;
+    line-height: 195%;
+    padding: 10px 50px 60px 30px;
+    }
+
+    .intro-header {
+      padding-top: 40px;
+      padding-left: 30px;
+    }
+
+
+}
+
+/* HDI mobile */
+@media only screen and (min-width: 640px) {
+
+   .intro-copy { 
+    font-size: 1em;
+    line-height: 210%%;
+    padding: 40px 60px 80px 40px;
+    }
+
+    .intro-header {
+      padding-top: 50px;
+      padding-left: 40px;
+    }
+
+    .degree-title {
+      font-size: 150%;  
+    }
+}
+
+/* HDI mobile */
+@media only screen and (min-width: 900px) {
+
+   .intro-copy { 
+    font-size: 1.3em;
+    line-height: 210%;
+    padding: 40px 80px 120px 60px;
+    }
+
+    .intro-header {
+      padding-top: 80px;
+      padding-left: 50px;
+    }
+
+    .degree-title {
+      font-size: 200%;  
+    }
+
+
+}
