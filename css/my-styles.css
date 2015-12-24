@@ -1,175 +1,175 @@
-.style2 {
-  color: #2DAEBF;
-  text-shadow: 0px 1px 0px #0092b3,0px 2px 0px #0087a6,0px 3px 0px #008099,0px 4px 0px #00758c,0px 5px 0px #555,0px 6px 0px #006a80,0px 0px 0px #006073,0px 8px 7px #005566; }
-
-.style6 {
-  color: #999;
-  text-shadow:  3px 3px 0 rgba(0, 0, 0, 0.6), 3px 3px 8px rgba(0, 0, 0, 0.4); }
-  .style6:hover {
-    transition: all 0.5s ease 0s;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.4); }
-
-.style9 {
-  color: #F7CA18;
-  text-shadow: 15px 0 15px #999, -15px 0 15px #999, 0 20px 25px #999, 0 -20px 25px #999; }
-
-.style9:hover {
-    color: #F64747;
-    transition: color 2s ease 0.1s;
-    text-shadow: 5px 0 5px #000;
-    transition: text-shadow 0.7s ease 0.2s; }
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-html {
-  font-size: 100%;
-}
-
-body {
-  height: 100%;
-
-}
-
-#main-header {
-  background: url("../img/fuji.jpg") no-repeat center center scroll;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75), 
-      rgba(255, 255, 255, 0.75)
-      ), url('../img/fuji.jpg') no-repeat center center scroll;
-  background-size: cover;
-  color: #555;
-}
-
-
-.off-canvas-content {
-  height: 100%;
-  background-color: #fff;
-}
-
-#offCanvas {
-  height: 100%;
-  background: url("../img/pattern_black_linen.png");
-}
-
-.off-canvas-wrapper {
+html, body {
   height: 100%;
 }
 
-.degree-content {
-  text-align: center;
+/*body {
+  padding: 50px 0 0 0;
+}*/
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
 }
 
 .degree-title {
-  text-align: center;
-  font-weight: bold;
-  color: #000;
-
+  font-variant: small-caps;
 }
 
-.section-container {
-    width: 95%;
+.degree-content h4 {
+  font-variant: small-caps;
+}
+
+.centered {
+  margin: auto;
+}
+
+.intro {
+  height: 100%;
+}
+
+.intro-full {
+  height: 100vh;/* subtract padding for the navbar*/
+  padding: auto;
+}
+
+.intro-full.jumbotron {
+  background: url('../img/pattern_black_linen.png') repeat;
+  color: #e7e7e7;
+}
+
+.social_media {padding: 8% 0 16% 0;}
+.social_media a {color: #D2D2D2;}
+.social_media a:hover, #intro .social_media a:focus {color: #4D0000;}
+.social_media i {margin: 0 8px; font-size: 1.5em;}
+
+.offcanvas img {
+  padding: 2rem;
+}
+
+.circle-avatar {
+  /* make it responsive */
+  max-width: 50%;
+  width:100%;
+  height:auto;
+  display:block;
+
+  /* div height to be the same as width*/
+  padding-top:50%;
+
+  /* make it a circle */
+  border-radius:50%;
+
+  /* Centering on image's center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+
+  /* optional to make div centered in parent*/
+  margin: 2em auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  }
+
+  .center {
     margin: 0 auto;
-    padding: 25px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.intro-copy {
-  font-weight: bold;
-  font-size: .75em;
-  line-height: 175%;
-  color: #666;
-  padding: 10px 30px 40px 15px;
+.avatar {
+  background-image:url(http://lorempixel.com/g/400/200/cats/1/)
 }
 
-#intro-header {
-  padding-top: 20px;
-  padding-left: 10px;
 
+
+
+
+
+/* Override Bootstrap navbar button nonsense */
+
+.navbar-default {
+  background-color: #4d0000;
+  border-color: #290000;
+}
+.navbar-default .navbar-brand {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-text {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #4d0000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffbbbc;
+  background-color: #290000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #4d0000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #290000;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #290000;
+}
+.navbar-default .navbar-toggle {
+  border-color: #290000;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #290000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-link {
+  color: #e7e7e7;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
 }
 
-hr {
-  height: 1px;
-  color: #2f4f4f;
-  background-color: #2f4f4f;
-  border: none;
-}
-
-/* Very small mobile */
-@media only screen and (min-width: 320px) {
-
-
-
-   .intro-copy { 
-    font-size: .85em;
-    line-height: 185%;
-    padding: 10px 40px 50px 20px;
-    }
-
-    #intro-header {
-      padding-top: 30px;
-      padding-left: 20px;
-    }
-
-
-}
-
-/* Mobile */
-@media only screen and (min-width: 500px) {
-
-   .intro-copy { 
-    font-size: 1em;
-    line-height: 195%;
-    padding: 10px 50px 60px 30px;
-    }
-
-    #intro-header {
-      padding-top: 40px;
-      padding-left: 30px;
-    }
-
-
-}
-
-/* HDI mobile */
-@media only screen and (min-width: 640px) {
-
-   .intro-copy { 
-    font-size: 1em;
-    line-height: 210%%;
-    padding: 40px 60px 80px 40px;
-    }
-
-    #intro-header {
-      padding-top: 50px;
-      padding-left: 40px;
-    }
-
-    .degree-title {
-      font-size: 150%;  
-    }
-}
-
-/* Desktop/Laptop */
-@media only screen and (min-width: 900px) {
-
-   .intro-copy { 
-    font-size: 1.3em;
-    line-height: 210%;
-    padding: 40px 80px 120px 60px;
-    }
-
-    #intro-header {
-      padding-top: 80px;
-      padding-left: 50px;
-    }
-
-    .degree-title {
-      font-size: 200%;  
-    }
-
-
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #e7e7e7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #290000;
+  }
 }
